@@ -26,13 +26,14 @@ export default function LoginPage() {
     
     if (email === 'admin@example.com' && password === '123') {
       localStorage.setItem('isAuthenticated', 'true');
-      router.push('/admin');
+      router.push('/home');
     } else {
       setError('Invalid email or password');
     }
   };
 
   return (
+    
     <Box
       sx={{
         display: 'flex',
@@ -40,14 +41,15 @@ export default function LoginPage() {
         alignItems: 'center',
         minHeight: '100vh',
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        p: 2
+        p: 2,
+        
       }}
     >
-      <Box sx={{ position: 'absolute', top: 16, left: 16 }}>
-        <Typography variant="caption" sx={{ color: 'white', display: 'block' }}>
+      <Box sx={{ position: 'absolute', top: 16, left: 16, p: '4px' }}>
+        <Typography variant="caption" sx={{ color: 'white', display: 'block', bgcolor: 'black', fontSize:'20px', p: '4px', borderRadius: '10px' }}>
           Email: admin@example.com
         </Typography>
-        <Typography variant="caption" sx={{ color: 'white', display: 'block' }}>
+        <Typography variant="caption" sx={{ color: 'white', display: 'block', bgcolor: 'black', fontSize:'20px', p: '4px', borderRadius: '10px', mt:'10px' }}>
           Password: 123
         </Typography>
       </Box>

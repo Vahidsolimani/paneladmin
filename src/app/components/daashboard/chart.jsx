@@ -98,7 +98,7 @@ const valueFormatter = (value) => `${value}mm`;
 
 export default function FormatterDemo() {
   return (
-    <BarChart
+    <BarChart sx={{padding:'20px'}}
       dataset={dataset}
       xAxis={[
         {
