@@ -1,7 +1,7 @@
 # panel_admin
 
 
-- [Demo Project](https://paneladmin-sigma.vercel.app/)
+- [Demo Project](https://paneladmin-2sfr.vercel.app/home)
 
 - Developed by vahid solimani
 
